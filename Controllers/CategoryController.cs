@@ -51,7 +51,7 @@ namespace ExamDynamics.API.Controllers
         // PUT: api/category/1
         
         [Authorize(Roles = "Admin")]
-        [HttpPut("id")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, CreateCategoryDto dto)
         {
             var category = await _context.Categories.FindAsync(id);
@@ -65,7 +65,7 @@ namespace ExamDynamics.API.Controllers
         }
         // Delete: api/category/1
         [Authorize(Roles = "Admin")]
-        [HttpDelete("id")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var category = await _context.Categories.FindAsync(id);
