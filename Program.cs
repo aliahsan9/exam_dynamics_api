@@ -14,7 +14,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ================= DATABASE =================
+// ================= DATABASE ================
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
