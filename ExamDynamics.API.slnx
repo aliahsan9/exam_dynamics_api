@@ -1,3 +1,7 @@
 <Solution>
+  <Project Path="../exam-dynamics-frontend/exam-dynamics-frontend.esproj">
+    <Build />
+    <Deploy />
+  </Project>
   <Project Path="ExamDynamics.API.csproj" />
 </Solution>
